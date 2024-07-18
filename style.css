@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #00449e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: #00449e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro, .services, .projects, .team, .contact {
+    margin-bottom: 40px;
+}
+
+.intro {
+    background-color: #00449e;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.services, .projects, .team, .contact {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-list, .team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item, .team-member {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background: #00449e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.intro {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover; /* 确保图片覆盖整个背景 */
+    color: #fff;
+    padding: 40px 20px; /* 增加左右内边距 */
+    text-align: center;
+    min-height: 400px; /* 确保背景图片区域足够高 */
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中对齐 */
+    position: relative;
+    flex-direction: column; /* 使子元素垂直排列 */
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* 添加半透明黑色覆盖层 */
+    z-index: 1;
+}
+
+.intro h1, .intro p {
+    position: relative;
+    z-index: 2;
+}
+
+.intro h1 {
+    font-size: 2.5em; /* 增加标题字体大小 */
+    margin-bottom: 20px; /* 增加标题和段落之间的间距 */
+}
+
+.intro p {
+    font-size: 1.25em; /* 增加段落字体大小 */
+    max-width: 800px; /* 限制段落最大宽度 */
+    margin: 0 auto; /* 使段落居中 */
+}
+
+.contact {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: left; /* 将文本左对齐 */
+    display: inline-block; /* 使列表项内容居中对齐父容器 */
+    margin: 0 auto; /* 水平居中 */
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #00449e;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
